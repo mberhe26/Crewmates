@@ -1,0 +1,224 @@
+.color-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.color-option {
+  cursor: pointer;
+  padding-left: 30px;
+  position: relative;
+}
+
+.color-option::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.color-option.selected::before {
+  border-color: #918686;
+  background-color: #b6a9a9;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-container img {
+  max-width: 300px;
+  margin: 20px 0;
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+nav {
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.content-container {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+
+
+.crewmate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.crewmate-container h1 {
+  margin-top: 2rem;
+}
+
+.crewmate-container img {
+  max-width: 300px;
+  margin: 1rem 0;
+}
+
+.crewmate-container form {
+  margin-top: 2rem;
+  width: 600px;
+  padding: 3rem;
+  border: 3px solid #af9e9e;
+  border-radius: 10px;
+}
+
+.crewmate-container form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.crewmate-container form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.crewmate-container form button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: #686d9e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.color-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.color-option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+
+.color-option.red {
+  background-color: red;
+}
+
+.color-option.blue {
+  background-color: blue;
+}
+
+.color-option.green {
+  background-color: green;
+}
+
+
+.crewmate-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.crewmate-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  
+}
+
+.crewmate-card {
+  background-color: #212431;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 250px;
+  color: #fff;
+}
+
+.crewmate-card h3 {
+  margin-top: 0;
+}
+
+.crewmate-card p {
+  margin: 8px 0;
+}
+
+.crewmate-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.crewmate-actions button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.crewmate-actions button:hover {
+  background-color: #0056b3;
+}
